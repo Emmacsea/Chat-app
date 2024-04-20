@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+.chat-design {
+    position: relative;
+    background:  hsl(270, 20%, 96%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-design .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    display: flex;
+    justify-content: start;
+    width: 25%;
+    height: 90%;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 300px;
+    transition: .4s ease-in all;
+    
+}
+
+.chat-design .phone {
+    position: relative;
+    width: 270px;
+    height: auto;
+    background: hsl(0, 0%, 100%);
+    border-radius: 2em;
+    z-index: 1;
+    margin-left: 20em;
+    display: flex;
+    flex-direction: column;
+    padding: .6em;
+}
+
+.phone .ground {
+    background: hsl(270, 20%, 96%);
+    border-radius: 2em;
+}
+
+.ground header {
+    position: relative;
+    background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 1.6em;
+    border-top-left-radius: 1.6em;
+    padding: 1.3em .2em .6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-start;
+}
+
+
+header .pers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: "Rubik"; 
+}
+
+.pers a {
+    color: hsl(0, 0%, 100%);
+    align-self: center;
+    margin-top: .3em;
+    font-size: 1.2em;
+}
+
+.pers img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+    object-fit: contain;
+    align-self: center;
+    margin-top: .1em;
+}
+
+.pers .det {
+    line-height: 1em;
+    margin-top: .5em;
+}
+
+.det .name {
+    font-size: .9em;
+    color:  hsl(0, 0%, 100%);
+    font-family: "Rubik";
+    font-weight: 500;
+}
+
+.det .a {
+    color: hsl(276, 100%, 81%);
+    font-size: .7em;
+}
+
+
+header span {
+    color:  hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ground .body {
+    padding: 1em .5em;
+    position: relative;
+}
+
+.body .chat {
+    width: 60%;
+    color: hsl(276, 55%, 52%);
+    font-size: .6em;
+    background: hsla(276, 100%, 81%, .2);
+    border-radius: 1.2em;
+    margin-bottom: 1.2em;
+    padding: .7em 1.2em;
+}
+
+.body .img {
+    position: absolute;
+    right: 7.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 45px;
+}
+
+.body .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: .9em;
+}
+
+.body .rep {
+    margin-top: 4.6em;
+    margin-bottom: 1.2em;
+}
+
+.rep .reply {
+    color: hsl(271, 15%, 43%);
+    background:  hsl(0, 0%, 100%);
+    padding: .7em 1.2em;
+    font-size: .6em;
+    border-radius: 1.2em;
+    margin-top: 12px;
+}
+
+.rep .pr {
+    width: 65%;
+    margin-left: 8em;
+}
+
+.rep .cr {
+    width: 50%;
+    margin-left: 11.5em;
+}
+
+.body .price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price .pri {
+    background: linear-gradient(70deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 73%;
+    padding: .5em;
+    margin-bottom: .5em;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    border-bottom-right-radius: .6em;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 8px;
+}
+
+.pri input[type="radio"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(289, 100%, 72%);
+}
+
+.pri label {
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: 12px;
+}
+
+.pri label span {
+    display: flex;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.message form {
+    display: flex;
+    margin: .3em 0 -.2em;
+}
+
+form input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 1em 1.6em;
+    border-radius: 3em;
+    color:  hsl(270, 7%, 64%);
+    font-size: .8em;
+    background: hsl(0, 0%, 100%);
+}
+
+form input::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+form .button {
+    position: absolute;
+    bottom: 1.1em;
+    right: 1em;
+    padding: .5em;
+    background: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    
+    z-index: 1;
+    
+}
+
+.button ion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9em;
+}
+
+
+
+.chat-design .booking {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 10em;
+}
+
+
+.booking h3 {
+    color: hsl(271, 36%, 24%);
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.booking p {
+    width: 55%;
+    color: hsl(270, 7%, 64%);
+    margin-top: 1.2em;
+    
+}
