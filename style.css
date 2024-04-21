@@ -32,7 +32,7 @@
 
 .chat-design .phone {
     position: relative;
-    width: 270px;
+    width: 370px;
     height: auto;
     background: hsl(0, 0%, 100%);
     border-radius: 2em;
@@ -62,23 +62,24 @@
     align-self: flex-start;
 }
 
+header a {
+    color: hsl(0, 0%, 100%);
+    margin-top: .3em;
+    font-size: 1.2em;
+    margin-left: -2.4em;
+}
 
-header .pers {
+header .details {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
     font-family: "Rubik"; 
+    margin-left: -7em;
 }
 
-.pers a {
-    color: hsl(0, 0%, 100%);
-    align-self: center;
-    margin-top: .3em;
-    font-size: 1.2em;
-}
 
-.pers img {
+.details img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -88,19 +89,14 @@ header .pers {
     margin-top: .1em;
 }
 
-.pers .det {
-    line-height: 1em;
-    margin-top: .5em;
-}
-
-.det .name {
+.pe .name {
     font-size: .9em;
     color:  hsl(0, 0%, 100%);
     font-family: "Rubik";
     font-weight: 500;
 }
 
-.det .a {
+.pe .a {
     color: hsl(276, 100%, 81%);
     font-size: .7em;
 }
@@ -109,8 +105,9 @@ header .pers {
 header span {
     color:  hsl(0, 0%, 100%);
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    margin-right: -3em;
 }
 
 .ground .body {
@@ -130,12 +127,12 @@ header span {
 
 .body .img {
     position: absolute;
-    right: 7.3em;
+    right: 7.8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    width: 45px;
+    width: 48px;
 }
 
 .body .img img {
@@ -159,13 +156,13 @@ header span {
 }
 
 .rep .pr {
-    width: 65%;
-    margin-left: 8em;
+    width: 55%;
+    margin-left: 14em;
 }
 
 .rep .cr {
-    width: 50%;
-    margin-left: 11.5em;
+    width: 48%;
+    margin-left: 16em;
 }
 
 .body .price {
@@ -270,7 +267,7 @@ form .button {
     background: hsl(271, 36%, 24%);
     border-radius: 50%;
     color: hsl(0, 0%, 100%);
-    
+    cursor: pointer;
     z-index: 1;
     
 }
