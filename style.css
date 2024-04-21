@@ -175,38 +175,70 @@ header span {
 
 .price .pri {
     background: linear-gradient(70deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    width: 73%;
-    padding: .5em;
+    width: 90%;
+    padding: .9em .5em .9em 2.5em;
     margin-bottom: .5em;
     border-top-left-radius: .6em;
     border-top-right-radius: .6em;
     border-bottom-right-radius: .6em;
     color: hsl(0, 0%, 100%);
-    display: flex;
     gap: 8px;
+    display: flex;
+    position: relative;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
+
 
 .pri input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  
+}
+
+.pa {
+    position: absolute;
+    top: .6em;
+    left: .1em;
     background: transparent;
-    border: none;
-    outline: none;
-    color: hsl(289, 100%, 72%);
+    margin-left: .7em;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
 }
 
-.pri label {
-    font-size: .8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
-    gap: 12px;
+/* .pri:hover input ~ .pa {
+    background: hsl(293, 100%, 63%);
+} */
+
+.pri input:checked ~ .pa {
+    background: blue;
 }
 
-.pri label span {
-    display: flex;
-    text-align: center;
-    font-size: 1.4em;
-    font-weight: bold;
+.pa::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.pri input:checked ~ .pa::after {
+    display: block;
+}
+
+.pri .pa::after {
+    top: 1.2em;
+    left: 2em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: hsl(0, 0%, 100%);
+    background: red;
 }
 
 .message form {
